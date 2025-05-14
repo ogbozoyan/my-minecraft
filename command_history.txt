@@ -1,0 +1,20 @@
+/l joker123
+/login joker123
+/register cg4dsw joker123 joker123
+/register CG4DSW joker123 joker123
+/kraj create
+/rtp
+/jobs
+/jobs browse
+/rtp
+/spawn
+/tpa xmatre
+/tpa matlazan
+/tpa 3adam1
+/tpa matlazan
+/tpa xmatre
+/register joker123 joker123
+/tmap
+/nationality
+/gl как карту глянуть ?
+/menu

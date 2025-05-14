@@ -1,0 +1,322 @@
+---- Minecraft Network Protocol Error Report ----
+// Maybe this time it will work!
+
+Time: 2025-05-12 01:50:28
+Description: Packet handling error
+
+io.netty.handler.codec.DecoderException: Received unknown packet id 25
+	at knot//net.minecraft.class_9136.method_56425(class_9136.java:32)
+	at knot//net.minecraft.class_9136.decode(class_9136.java:14)
+	at knot//net.minecraft.class_2543.decode(class_2543.java:31)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468)
+	at knot//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at knot//io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:202)
+	at knot//io.netty.handler.flow.FlowControlHandler.read(FlowControlHandler.java:139)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeRead(AbstractChannelHandlerContext.java:837)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.read(AbstractChannelHandlerContext.java:814)
+	at knot//io.netty.channel.DefaultChannelPipeline.read(DefaultChannelPipeline.java:1004)
+	at knot//io.netty.channel.AbstractChannel.read(AbstractChannel.java:290)
+	at knot//io.netty.channel.DefaultChannelConfig.setAutoRead(DefaultChannelConfig.java:341)
+	at knot//io.netty.channel.socket.DefaultSocketChannelConfig.setAutoRead(DefaultSocketChannelConfig.java:314)
+	at knot//io.netty.channel.socket.DefaultSocketChannelConfig.setAutoRead(DefaultSocketChannelConfig.java:37)
+	at knot//net.minecraft.class_9130.method_56353(class_9130.java:93)
+	at knot//net.minecraft.class_9130$class_9131.write(class_9130.java:32)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at knot//io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at knot//io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at knot//io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at knot//io.netty.channel.ChannelOutboundHandlerAdapter.write(ChannelOutboundHandlerAdapter.java:113)
+	at knot//net.minecraft.class_2535$2.write(class_2535.java:530)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:940)
+	at knot//io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1247)
+	at knot//io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at knot//io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at knot//io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at knot//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at knot//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at knot//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Netty Client IO #7
+Stacktrace:
+	at knot//net.minecraft.class_2547.method_55622(class_2547.java:33)
+Mixins in Stacktrace: None found
+
+-- Connection --
+Details:
+	Protocol: configuration
+	Flow: CLIENTBOUND
+	Server type: OTHER
+	Server brand: BixLand (Paper)
+Stacktrace:
+	at knot//net.minecraft.class_2547.method_55622(class_2547.java:33)
+	at knot//net.minecraft.class_2600.method_59803(class_2600.java:62)
+	at knot//net.minecraft.class_8673.method_60882(class_8673.java:136)
+	at knot//net.minecraft.class_8673.method_60881(class_8673.java:127)
+	at knot//net.minecraft.class_2535.exceptionCaught(class_2535.java:161)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:317)
+	at knot//io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:143)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:447)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at knot//io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:202)
+	at knot//io.netty.handler.flow.FlowControlHandler.read(FlowControlHandler.java:139)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeRead(AbstractChannelHandlerContext.java:837)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.read(AbstractChannelHandlerContext.java:814)
+	at knot//io.netty.channel.DefaultChannelPipeline.read(DefaultChannelPipeline.java:1004)
+	at knot//io.netty.channel.AbstractChannel.read(AbstractChannel.java:290)
+	at knot//io.netty.channel.DefaultChannelConfig.setAutoRead(DefaultChannelConfig.java:341)
+	at knot//io.netty.channel.socket.DefaultSocketChannelConfig.setAutoRead(DefaultSocketChannelConfig.java:314)
+	at knot//io.netty.channel.socket.DefaultSocketChannelConfig.setAutoRead(DefaultSocketChannelConfig.java:37)
+	at knot//net.minecraft.class_9130.method_56353(class_9130.java:93)
+	at knot//net.minecraft.class_9130$class_9131.write(class_9130.java:32)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at knot//io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at knot//io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at knot//io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:120)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+	at knot//io.netty.channel.ChannelOutboundHandlerAdapter.write(ChannelOutboundHandlerAdapter.java:113)
+	at knot//net.minecraft.class_2535$2.write(class_2535.java:530)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+	at knot//io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:940)
+	at knot//io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1247)
+	at knot//io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at knot//io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at knot//io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at knot//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at knot//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at knot//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Mixins in Stacktrace:
+	net.minecraft.class_8673:
+		com.aizistral.nochatreports.common.mixins.client.MixinClientPacketListener (mixins/common/nochatreports.mixins.json)
+		net.fabricmc.fabric.mixin.networking.client.accessor.ClientCommonNetworkHandlerAccessor (fabric-networking-api-v1.client.mixins.json)
+		net.fabricmc.fabric.mixin.networking.client.ClientCommonNetworkHandlerMixin (fabric-networking-api-v1.client.mixins.json)
+	net.minecraft.class_2535:
+		link.e4mc.mixin.ConnectionMixin (e4mc_minecraft.mixins.json)
+		net.fabricmc.fabric.mixin.networking.ClientConnectionMixin (fabric-networking-api-v1.mixins.json)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Mac OS X (aarch64) version 15.4.1
+	Java Version: 21.0.3, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 860585936 bytes (820 MiB) / 1233125376 bytes (1176 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 8
+	Processor Vendor: Apple Inc.
+	Processor Name: Apple M1 Pro
+	Identifier: Apple Inc. Family 0x1b588bb3 Model 0 Stepping 0
+	Microarchitecture: ARM64 SoC: Firestorm + Icestorm
+	Frequency (GHz): 3.23
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: Apple M1 Pro
+	Graphics card #0 vendor: Apple (0x106b)
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Memory slot #0 capacity (MiB): 0.00
+	Memory slot #0 clockSpeed (GHz): 0.00
+	Memory slot #0 type: unknown
+	Virtual memory max (MiB): 18432.00
+	Virtual memory used (MiB): 13784.47
+	Swap memory total (MiB): 2048.00
+	Swap memory used (MiB): 805.00
+	Space in storage for jna.tmpdir (MiB): available: 92855.19, total: 471482.09
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 92855.19, total: 471482.09
+	Space in storage for io.netty.native.workdir (MiB): available: 92855.19, total: 471482.09
+	Space in storage for java.io.tmpdir (MiB): available: 92855.19, total: 471482.09
+	Space in storage for workdir (MiB): available: 92855.19, total: 471482.09
+	JVM Flags: 19 total; -Xms512M -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:MaxGCPauseMillis=200 -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -XX:+UseG1GC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:+UseStringDeduplication -Xmx4096M -Xss2M
+	Fabric Mods: 
+		animatica: Animatica 0.6.1+1.21
+		bettermounthud: Better Mount HUD 1.2.4
+		capes: Capes 1.5.4+1.21
+		citresewn: CIT Resewn 1.2.1+1.21
+			citresewn-defaults: CIT Resewn: Defaults 1.2.1+1.21
+		cloth-config: Cloth Config v15 15.0.140
+			cloth-basic-math: cloth-basic-math 0.6.1
+		continuity: Continuity 3.0.0-beta.5+1.21
+		controlify: Controlify 2.0.0-beta.14+1.21-fabric
+			dev_isxander_libsdl4j: libsdl4j 3.6896c4c-38
+			org_hid4java_hid4java: hid4java 0.7.0
+			org_quiltmc_parsers_gson: gson 0.3.0
+			org_quiltmc_parsers_json: json 0.3.0
+		cubes-without-borders: Cubes Without Borders 2.1.1+1.21
+		debugify: Debugify 1.21.1+1.0
+		dynamic_fps: Dynamic FPS 3.7.3
+			net_lostluma_battery: battery 1.1.0
+		e4mc_minecraft: e4mc 5.2.1
+			folk_sisby_kaleido-config: kaleido-config 0.3.1+1.3.1
+		enhancedblockentities: Enhanced Block Entities 0.10.1+1.21
+		entity_model_features: Entity Model Features 2.2.6
+		entity_texture_features: Entity Texture Features 6.2.5
+			org_apache_httpcomponents_httpmime: httpmime 4.5.10
+		entityculling: EntityCulling 1.7.0
+		fabric-api: Fabric API 0.105.0+1.21.1
+			fabric-api-base: Fabric API Base 0.4.42+6573ed8c19
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.68+b559734419
+			fabric-biome-api-v1: Fabric Biome API (v1) 13.0.29+5bd9f1bc19
+			fabric-block-api-v1: Fabric Block API (v1) 1.0.22+0af3f5a719
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.10+6573ed8c19
+			fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.52+0af3f5a719
+			fabric-client-tags-api-v1: Fabric Client Tags 1.1.15+6573ed8c19
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.49+f71b366f19
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.28+6ced4dd919
+			fabric-commands-v0: Fabric Commands (v0) 0.2.66+df3654b319
+			fabric-content-registries-v0: Fabric Content Registries (v0) 8.0.16+b559734419
+			fabric-convention-tags-v1: Fabric Convention Tags 2.0.23+7f945d5b19
+			fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.8.0+9d22c5fd19
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.29+0af3f5a719
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.1.28+1daea21519
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 20.2.20+16c4ae2519
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.0+6fc22b9919
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.7.0+2122d82819
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.7.13+ba9dae0619
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.53+6ced4dd919
+			fabric-item-api-v1: Fabric Item API (v1) 11.1.0+d5debaed19
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.1.5+3fc0e55219
+			fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.47+0af3f5a719
+			fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.45+df3654b319
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.3.12+6c1df36019
+			fabric-loot-api-v2: Fabric Loot API (v2) 3.0.14+3f89f5a519
+			fabric-loot-api-v3: Fabric Loot API (v3) 1.0.2+3f89f5a519
+			fabric-message-api-v1: Fabric Message API (v1) 6.0.13+6573ed8c19
+			fabric-model-loading-api-v1: Fabric Model Loading API (v1) 2.0.0+fe474d6b19
+			fabric-networking-api-v1: Fabric Networking API (v1) 4.3.0+c7469b2119
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 15.2.0+40875a9319
+			fabric-particles-v1: Fabric Particles (v1) 4.0.2+6573ed8c19
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 5.0.13+6508971219
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 5.1.3+60c3209b19
+			fabric-renderer-api-v1: Fabric Renderer API (v1) 3.4.0+c705a49c19
+			fabric-renderer-indigo: Fabric Renderer - Indigo 1.7.0+c705a49c19
+			fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.68+df3654b319
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.48+73761d2e19
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.6+1daea21519
+			fabric-rendering-v0: Fabric Rendering (v0) 1.1.71+df3654b319
+			fabric-rendering-v1: Fabric Rendering (v1) 5.0.5+df16efd019
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 4.3.0+8dc279b119
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 1.3.0+5659912919
+			fabric-screen-api-v1: Fabric Screen API (v1) 2.0.25+8b68f1c719
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.87+b559734419
+			fabric-sound-api-v1: Fabric Sound API (v1) 1.0.23+6573ed8c19
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 5.3.0+d831205f19
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 6.1.0+1daea21519
+		fabric-language-kotlin: Fabric Language Kotlin 1.12.2+kotlin.2.0.20
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 2.0.20
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 2.0.20
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 2.0.20
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 2.0.20
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.25.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.9.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.9.0
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.6.1
+			org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm: kotlinx-io-bytestring-jvm 0.5.4
+			org_jetbrains_kotlinx_kotlinx-io-core-jvm: kotlinx-io-core-jvm 0.5.4
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.7.2
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.7.2
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.7.2
+		fabricloader: Fabric Loader 0.16.13
+			mixinextras: MixinExtras 0.4.1
+		fabricskyboxes: FabricSkyBoxes 0.7.4+mc1.21
+		fabrishot: Fabrishot 1.14.1
+		fastquit: FastQuit 3.0.0+1.20.6
+		ferritecore: FerriteCore 7.0.0
+		fsb-interop: FabricSkyBoxes Interop 1.4.0+mc1.21-build.54
+		immediatelyfast: ImmediatelyFast 1.2.21+1.21.1
+			net_lenni0451_reflect: Reflect 1.3.4
+		indium: Indium 1.0.35+mc1.21
+		iris: Iris 1.7.3+mc1.21
+			io_github_douira_glsl-transformer: glsl-transformer 2.0.1
+			org_anarres_jcpp: jcpp 1.4.14
+			org_antlr_antlr4-runtime: antlr4-runtime 4.13.1
+		isxander-main-menu-credits: Main Menu Credits 1.2.0
+		java: OpenJDK 64-Bit Server VM 21
+		languagereload: Language Reload 1.6.1+1.21
+		lithium: Lithium 0.13.1
+		malilib: MaLiLib 0.20.0
+		minecraft: Minecraft 1.21.1
+		mixintrace: MixinTrace 1.1.1+1.17
+		modelfix: Model Gap Fix 1.21-1.6
+		modernfix: ModernFix 5.19.3+mc1.21.1
+		modmenu: Mod Menu 11.0.2
+			placeholder-api: Placeholder API 2.4.0-pre.2+1.21
+		morechathistory: More Chat History 1.3.1
+		moreculling: More Culling 0.26.0
+			com_github_fallen-breath_conditional-mixin: conditional-mixin v0.6.2
+			mixinsquared: MixinSquared 0.1.1
+		nochatreports: No Chat Reports 1.21-v2.8.0
+		optigui: OptiGUI 2.3.0-beta.5+1.21
+			org_apache_commons_commons-text: commons-text 1.12.0
+			org_ini4j_ini4j: ini4j 0.5.4
+		paginatedadvancements: Paginated Advancements 2.5.1
+		plasmovoice: Plasmo Voice 2.0.10
+			aopalliance_aopalliance: aopalliance 1.0
+			com_google_inject_guice: guice 5.0.1
+			fabric-permissions-api-v0: fabric-permissions-api 0.2-SNAPSHOT
+			javax_inject_javax_inject: javax.inject 1
+		polytone: Polytone 1.21-2.3.8
+			net_objecthunter_exp4j: exp4j 0.4.8
+		puzzle: Puzzle 2.0.1
+			midnightlib: MidnightLib 1.6.3
+		reeses-sodium-options: Reese's Sodium Options 1.7.3+mc1.21
+		rrls: Remove Reloading Screen 5.0.8+mc1.21.1-fabric
+		sodium: Sodium 0.5.11+mc1.21
+		sodium-extra: Sodium Extra 0.5.7+mc1.21
+			caffeineconfig: CaffeineConfig 1.3.0+1.17
+		yet_another_config_lib_v3: YetAnotherConfigLib 3.5.0+1.21-fabric
+			com_twelvemonkeys_common_common-image: common-image 3.10.0
+			com_twelvemonkeys_common_common-io: common-io 3.10.0
+			com_twelvemonkeys_common_common-lang: common-lang 3.10.0
+			com_twelvemonkeys_imageio_imageio-core: imageio-core 3.10.0
+			com_twelvemonkeys_imageio_imageio-metadata: imageio-metadata 3.10.0
+			com_twelvemonkeys_imageio_imageio-webp: imageio-webp 3.10.0
+		yosbr: YOSBR 0.1.2
+		zoomify: Zoomify 2.14.0+1.21
+			com_akuleshov7_ktoml-core-jvm: ktoml-core-jvm 0.5.1
+	Loaded Shaderpack: (off)

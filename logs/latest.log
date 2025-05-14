@@ -1,0 +1,44 @@
+[00:00:40] [Render thread/INFO]: Loaded 533 advancements
+[00:00:46] [Render thread/INFO]: Loaded 533 advancements
+[00:04:38] [Render thread/INFO]: Loaded 533 advancements
+[00:04:53] [Render thread/INFO]: Loaded 533 advancements
+[00:07:29] [Render thread/INFO]: Loaded 533 advancements
+[00:12:54] [Server thread/INFO]: Villager class_1646['Nitwit'/92066, l='ServerLevel[Старый новый мир]', x=258.09, y=71.94, z=-20.92] died, message: 'Nitwit was slain by ogbozoyan'
+[00:12:54] [Render thread/INFO]: Villager class_1646['Nitwit'/92066, l='ClientLevel', x=258.53, y=71.94, z=-20.51] died, message: 'Nitwit died'
+[00:21:26] [Render thread/INFO]: [System] [CHAT] Respawn point set
+[00:32:03] [Render thread/INFO]: [System] [CHAT] Respawn point set
+[00:33:25] [Render thread/INFO]: Loaded 534 advancements
+[00:34:52] [Server thread/INFO]: Saving and pausing game...
+[00:34:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Старый новый мир]'/minecraft:overworld
+[00:34:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Старый новый мир]'/minecraft:the_nether
+[00:34:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Старый новый мир]'/minecraft:the_end
+[00:34:55] [Render thread/INFO]: Using default channel type
+[00:34:55] [Render thread/INFO]: Started serving on 54706
+[00:34:55] [LanServerPinger #1/WARN]: LanServerPinger: No route to host
+[00:34:55] [Render thread/INFO]: [System] [CHAT] Local game hosted on port [54706]
+[00:35:28] [Render thread/INFO]: Xaero hud session finalized.
+[00:35:28] [Server thread/INFO]: ogbozoyan lost connection: Disconnected
+[00:35:28] [Server thread/INFO]: ogbozoyan left the game
+[00:35:28] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[00:35:28] [Server thread/INFO]: Stopping server
+[00:35:28] [Server thread/INFO]: Saving players
+[00:35:28] [Server thread/INFO]: Saving worlds
+[00:35:28] [Server thread/INFO]: ServerLevel[Старый новый мир]/minecraft:overworld: waiting for 2343 chunks to unload
+[00:35:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Старый новый мир]'/minecraft:overworld
+[00:35:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Старый новый мир]'/minecraft:the_nether
+[00:35:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Старый новый мир]'/minecraft:the_end
+[00:35:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:35:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:35:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:35:28] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[00:35:28] [C2ME Storage #3/INFO]: Storage thread Thread[#104,C2ME Storage #3,8,main] stopped
+[00:35:28] [C2ME Storage #2/INFO]: Storage thread Thread[#103,C2ME Storage #2,8,main] stopped
+[00:35:29] [C2ME Storage #1/INFO]: Storage thread Thread[#102,C2ME Storage #1,8,main] stopped
+[00:35:29] [C2ME Storage #6/INFO]: Storage thread Thread[#109,C2ME Storage #6,8,main] stopped
+[00:35:29] [C2ME Storage #5/INFO]: Storage thread Thread[#108,C2ME Storage #5,8,main] stopped
+[00:35:29] [C2ME Storage #4/INFO]: Storage thread Thread[#107,C2ME Storage #4,8,main] stopped
+[00:35:29] [C2ME Storage #9/INFO]: Storage thread Thread[#113,C2ME Storage #9,8,main] stopped
+[00:35:29] [C2ME Storage #8/INFO]: Storage thread Thread[#112,C2ME Storage #8,8,main] stopped
+[00:35:29] [C2ME Storage #7/INFO]: Storage thread Thread[#111,C2ME Storage #7,8,main] stopped
+[00:35:29] [Render thread/INFO]: Stopping worker threads
+[00:35:40] [Render thread/INFO]: Stopping!
